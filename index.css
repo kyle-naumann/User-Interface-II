@@ -19,7 +19,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 1px gray;
+	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -50,13 +50,68 @@ table {
 
 /* ///////////////////end reset/////////////////////// */
 
+*{
+	text-decoration: none;
+	font-family: 'Varela Round', sans-serif;
+}
+
 header{
 	background-color: lightgray;
 	width:100%;
 	padding:40px;
 }
+nav a{
+	margin: 0 10px;
+	border: 1px solid black;
+	padding: 20px;
+	display: inline-block;
+	border-radius: 20px;
+	color:darkgray;
+	text-decoration: none;
+	margin-top:20px;
+	margin-bottom: 0;
+	background: #181354
+}
+nav a:hover {
+	background: white;
+	  color: #181354;
+}
+h1{
+	font-family: 'Oswald', sans-serif;
+	font-size: 30px;
+}
 
+.me {
+	display: flex;
+}
+.contactme{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.top{
+	padding-top:100px;
+}
 
+.bottom{
+	padding:30px;
+}
+
+.me .left-side img{
+	width:400px;
+	height:400px;
+}
+.button1{
+padding-right:280px;
+padding-left:0;
+
+}
+
+.pitch{
+	padding:10em;
+	padding-top:20px;
+	font-size: 20px;
+}
 section{
 	padding:2em;
 	display: flex;
@@ -64,6 +119,15 @@ section{
 }
 .project{
 justify-content: space-between;
+align-content: stretch;
+
+}
+
+img{
+	width:250px;
+	height:250px;
+	margin-left:1em;
+	border-radius:10px;
 }
 
 
@@ -75,3 +139,66 @@ div{
 	
     background-color:white;
 }
+
+footer p{
+	text-align:center;
+	padding-bottom: 30px;
+}
+
+.bottombtn{
+	text-align:center;
+	padding:20px;
+	color:white;
+	background-color:#181354;
+	border-radius:20px;
+	width:100px;
+	
+}
+
+.projectfooter{
+	font-size: 25px;
+	padding-top: 1em;
+}
+
+#contactbutton{
+	width: 110px;
+	height:50px;
+	background-color: #181354;
+	color: white;
+	text-align:center;
+	border-radius: 10px;
+	margin-bottom:3em;
+	
+}
+#contactbutton:hover {
+	background: white;
+	  color: #181354;
+		  border: 1px solid black;
+
+}
+#contactbutton:visited{
+	color:white;
+}
+
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-linkedin {
+	background: #007bb5;
+	color: white;}
